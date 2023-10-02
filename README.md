@@ -13,3 +13,5 @@ SkillChamp is a platform designed to empower developers to enhance their skills 
 - Competition leaderboards to showcase participants' rankings based on successful challenge completion.
 - allowing community members to create and guide challenges.
 
+## Demo
+https://majedalshehri1.github.io/hackathon-skillchamp-project/
