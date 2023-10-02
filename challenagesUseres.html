@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenages</title>
+
+
+    <!-- ================= Links ============ -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!---->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!-- End Links -->
+
+
+
+
+</head>
+<body class="bg-[#000b1c] w-full scroll-smooth">
+    
+
+  <nav
+    class="sticky top-0 z-10 bg-[#000b1c] backdrop-filter backdrop-blur-lg bg-opacity-30"
+  >
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex space-x-4">
+          
+          <div class="flex align-middle">
+
+            <div>
+              <div class="flex flex-row items-center justify-center h-12 w-full">
+              <div
+              class="flex items-center justify-center rounded-2xl text-white bg-[#000b1c] h-10 w-10"
+              >
+              <img
+              class="w-10 h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                src="https://cdn0.iconfinder.com/data/icons/editorial-darkmode/24/editorial_html-512.png"
+              >
+            </img>
+          </div>
+          <div class="ml-2 font-bold text-2xl text-white">SkillChamp</div>
+        </div>
+      </div>
+          <!-- Profile photo -->
+          
+          <div>
+            <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 mt-2" type="button">
+              <span class="sr-only">Open user menu</span>
+              <img class="w-8 h-8 rounded-full" src="https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg" alt="user photo">
+            </button>
+          </div>
+          
+          <div class="mt-3 ml-2">
+
+            <a href="#" class="text-2xl font-semibold text-[#c52d2d] hover:text-red-500 "
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                />
+              </svg>
+          </a>
+        </div>
+      </div>
+
+        </div>
+        <div class="flex space-x-4 text-[#ca9e17] hover:text-yellow-400">
+          <a
+            data-modal-target="crypto-modal"
+            data-modal-toggle="crypto-modal"
+            href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dropdown menu profile photo -->
+
+    
+
+    <div id="dropdownAvatar" class="z-10 hidden  rounded-lg shadow w-44 bg-gray-700 divide-gray-600">
+      <ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-600 hover:text-white">Profile</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-600 :hover:text-white">Settings</a>
+        </li>
+      </ul>
+    </div>
+  
+
+    <!-- End Dropdown menu profile photo -->
+  </nav>
+  <!-- End NavBar -->
+
+
+    <!-- ======================== Score Board ====================== -->
+
+    <div
+      id="crypto-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div style="direction: rtl" class="relative w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative rounded-lg shadow bg-gray-700">
+          <button
+            type="button"
+            class="absolute top-3 left-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white"
+            data-modal-hide="crypto-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <!-- Modal header -->
+          <div class="px-6 py-4 border-b rounded-t border-gray-600 flex">
+            <h3 class="text-base font-semibold lg:text-xl text-white">
+              Score Board
+            </h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+              style="color: #ca9e17"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6">
+            <p class="text-sm font-normal text-gray-400">
+              حل التحديات لتكون ضمن قائمة الخمسة الاكثر فاعلية 
+            </p>
+            <ul class="my-4 space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQRSngbbo6RfozMzK5OsRL9bDgnx4vZiP2Jw&usqp=CAU"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Y1bx</span>
+                  <span>#56</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-yellow-400"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://web.ics.purdue.edu/~circlek/IMG/KFR.jpg"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Rahaf</span>
+                  <span>#49</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-gray-400"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a178d60a-3455-43df-b0da-863f1ddaf38d/dfv3m5x-de495204-0631-4700-98ea-d0a541854f75.png/v1/fill/w_622,h_350,q_70,strp/yakuza_medic_gaming_by_clubilc_dfv3m5x-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2ExNzhkNjBhLTM0NTUtNDNkZi1iMGRhLTg2M2YxZGRhZjM4ZFwvZGZ2M201eC1kZTQ5NTIwNC0wNjMxLTQ3MDAtOThlYS1kMGE1NDE4NTRmNzUucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NeHbJwNEO5J1HYk0qoFnv6pExdUVpib72HyuUAWfEj4"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Khaled33</span>
+                  <span>#42</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-[#713f12]"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg bg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://camo.githubusercontent.com/a7c4c268f6216f37d5c38ac9f53d4244254ebad4fea97413bd1e0dea54e51dc1/68747470733a2f2f7261772e6769746875622e636f6d2f68617368646f672f6e6f64652d6964656e7469636f6e2d6769746875622f6d61737465722f6578616d706c65732f696d616765732f6769746875622e706e67"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap"
+                    >Manal</span
+                  >
+                  <span>#35</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-white dark:ring-gray-800"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHitaD1ZrcxCRK08phOF_d32QQBVgVohlbA&usqp=CAU"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Naser</span>
+                  <span>#29</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Score Board -->
+
+    <!-- Section Challenges -->
+
+    
+        <h1 class=" text-center text-gray-400 font-bold text-3xl">التحديات القائمة</h1>
+
+        <section style="direction: rtl;" class=" mt-12">
+        <div class="flex items-center justify-center">
+              <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+      
+      
+                  <!-- 1 card -->
+                  <div style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+                    <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                      <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                          <!-- svg  -->
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                              </svg>
+        
+                            </div>
+                          </a>
+                    <div class="mt-8">
+                        <p class="text-xl font-semibold my-2 text-white">بناء قاعدة قوية لتطبيقاتك بأستخدام JavaScript و Node.js 💪</p>
+                        <div class="flex space-x-2 text-white opacity-30 text-sm">
+                            <!-- svg  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                             <p>استخدم معرفتك بلغة JavaScript الفكرة من المشروع أكتساب أكبر فائده ، بالإضافة إلى تنظيم قواعد البيانات والتفاعل معها </p> 
+                        </div>
+                        <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                            <!-- svg  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                             <p class="text-white opacity-30">14 أيام</p> 
+                        </div>
+                        <div class="border-t-2 opacity-10"></div>
+        
+                        <div class="flex justify-between">
+                            <div class="my-2">
+                                <div class="flex space-x-2 pt-6">
+                                    <img src="https://camo.githubusercontent.com/a7c4c268f6216f37d5c38ac9f53d4244254ebad4fea97413bd1e0dea54e51dc1/68747470733a2f2f7261772e6769746875622e636f6d2f68617368646f672f6e6f64652d6964656e7469636f6e2d6769746875622f6d61737465722f6578616d706c65732f696d616765732f6769746875622e706e67" 
+                                    class="w-6 h-6 rounded-full"/>
+                                    <h3 class="pr-2"> Manal</h3>
+                                </div>
+                            </div>
+                             <div class="my-2">
+                                <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                                <div class="text-base text-gray-400 font-semibold pr-3">
+                                    <p class="text-white opacity-30">9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+      
+          
+                  <!-- 2 card -->
+                  <div style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+                    <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                      <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                          <!-- svg  -->
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                              </svg>
+        
+                            </div>
+                          </a>
+                    <div class="mt-8">
+                        <p class="text-xl font-semibold my-2 text-white">تحدي Frontend يوم التأسيس
+                          🇸🇦</p>
+                        <div class="flex space-x-2 text-white opacity-30 text-sm">
+                            <!-- svg  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                             <p> تصميم بسيط ويعكس نموذج ليوم التأسيس وجعل الموقع متجاوب</p> 
+                        </div>
+                        <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                            <!-- svg  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                             <p class="text-white opacity-30">4 أيام</p> 
+                        </div>
+                        <div class="border-t-2 opacity-10"></div>
+        
+                        <div class="flex justify-between">
+                            <div class="my-2">
+                                <div class="flex space-x-2 pt-6">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHitaD1ZrcxCRK08phOF_d32QQBVgVohlbA&usqp=CAU" 
+                                    class="w-6 h-6 rounded-full"/>
+                                    <h3 class="pr-2"> Naser</h3>
+                                </div>
+                            </div>
+                             <div class="my-2">
+                                <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                                <div class="text-base text-gray-400 font-semibold pr-3">
+                                    <p class="text-white opacity-30">42</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+      
+      
+                  
+      
+              </section>
+
+              <!-- ================================ buttonNavig ================================ -->
+
+        <section>
+
+          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+            <div class="relative w-full max-w-md max-h-full ">
+                <div class="relative  shadow border-solid border-2 border-[#1b317a] bg-[#021737] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-lg">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center">
+                        <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        </svg>
+                        <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">جاهز للتحدي؟</h3>
+                        <a href="aboutChallenages.html" data-modal-hide="popup-modal" type="button" class="rounded-md p-1 px-3 text-base font-semibold bg-gradient-to-r from-cyan-700 to-[#D829B1] hover:drop-shadow-2xl text-white">
+                            Yes, I'm sure
+                        </a>
+                        <a data-modal-hide="popup-modal" type="button" class="hover:bg-gray-400 cursor-pointer ml-3 rounded-md focus:outline-none focus:ring-gray-200  border border-[#D829B1] text-base px-3 p-1 hover:text-gray-900 text-gray-300  dark:hover:text-white dark:hover:bg-gray-600 ">No, cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <!-- End buttonNavig -->
+    
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+</html>

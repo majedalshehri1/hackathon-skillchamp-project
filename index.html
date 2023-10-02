@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillsChap</title>
+
+    <!-- ================= Links ============ -->
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- SplideJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!---->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <!---->
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!-- End Links -->
+
+
+     
+
+</head>
+<body class="bg-[#000b1c] w-full scroll-smooth ">
+  
+    <!-- =================== NavBar ==================== -->
+    <nav
+      class="sticky top-0 z-10 bg-[#000b1c] backdrop-filter backdrop-blur-lg bg-opacity-30"
+    >
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex space-x-4">
+            
+            <div class="flex align-middle">
+
+              <div>
+                <div class="flex flex-row items-center justify-center h-12 w-full">
+                <div
+                class="flex items-center justify-center rounded-2xl text-white bg-[#000b1c] h-10 w-10"
+                >
+                <img
+                class="w-10 h-10"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  src="https://cdn0.iconfinder.com/data/icons/editorial-darkmode/24/editorial_html-512.png"
+                >
+              </img>
+            </div>
+            <div class="ml-2 font-bold text-2xl text-white">SkillChamp</div>
+          </div>
+        </div>
+            <!-- Profile photo -->
+            
+            <div>
+              <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 mt-2" type="button">
+                <span class="sr-only">Open user menu</span>
+                <img class="w-8 h-8 rounded-full" src="https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg" alt="user photo">
+              </button>
+            </div>
+            
+            <div class="mt-3 ml-2">
+
+              <a href="#" class="text-2xl font-semibold text-[#c52d2d] hover:text-red-500 "
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                  />
+                </svg>
+            </a>
+          </div>
+        </div>
+
+          </div>
+          <div class="flex space-x-4 text-[#ca9e17] hover:text-yellow-400">
+            <a
+              data-modal-target="crypto-modal"
+              data-modal-toggle="crypto-modal"
+              href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dropdown menu profile photo -->
+
+      
+
+      <div id="dropdownAvatar" class="z-10 hidden  rounded-lg shadow w-44 bg-gray-700 divide-gray-600">
+        <ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-600 hover:text-white">Profile</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-600 :hover:text-white">Settings</a>
+          </li>
+        </ul>
+      </div>
+    
+
+      <!-- End Dropdown menu profile photo -->
+    </nav>
+    <!-- End NavBar -->
+
+
+    <!-- ======================== Score Board ====================== -->
+
+    <div
+      id="crypto-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div style="direction: rtl" class="relative w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative rounded-lg shadow bg-gray-700">
+          <button
+            type="button"
+            class="absolute top-3 left-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white"
+            data-modal-hide="crypto-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+          <!-- Modal header -->
+          <div class="px-6 py-4 border-b rounded-t border-gray-600 flex">
+            <h3 class="text-base font-semibold lg:text-xl text-white">
+              Score Board
+            </h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+              style="color: #ca9e17"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6">
+            <p class="text-sm font-normal text-gray-400">
+              حل التحديات لتكون ضمن قائمة الخمسة الاكثر فاعلية 
+            </p>
+            <ul class="my-4 space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQRSngbbo6RfozMzK5OsRL9bDgnx4vZiP2Jw&usqp=CAU"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Y1bx</span>
+                  <span>#56</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-yellow-400"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://web.ics.purdue.edu/~circlek/IMG/KFR.jpg"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Rahaf</span>
+                  <span>#49</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-gray-400"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a178d60a-3455-43df-b0da-863f1ddaf38d/dfv3m5x-de495204-0631-4700-98ea-d0a541854f75.png/v1/fill/w_622,h_350,q_70,strp/yakuza_medic_gaming_by_clubilc_dfv3m5x-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2ExNzhkNjBhLTM0NTUtNDNkZi1iMGRhLTg2M2YxZGRhZjM4ZFwvZGZ2M201eC1kZTQ5NTIwNC0wNjMxLTQ3MDAtOThlYS1kMGE1NDE4NTRmNzUucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NeHbJwNEO5J1HYk0qoFnv6pExdUVpib72HyuUAWfEj4"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Khaled33</span>
+                  <span>#42</span>
+                  <span
+                    class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium rounded"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-6 h-6 text-[#713f12]"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg bg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-gray-800"
+                      src="https://camo.githubusercontent.com/a7c4c268f6216f37d5c38ac9f53d4244254ebad4fea97413bd1e0dea54e51dc1/68747470733a2f2f7261772e6769746875622e636f6d2f68617368646f672f6e6f64652d6964656e7469636f6e2d6769746875622f6d61737465722f6578616d706c65732f696d616765732f6769746875622e706e67"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap"
+                    >Manal</span
+                  >
+                  <span>#35</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                >
+                  <div class="relative inline-block">
+                    <img
+                      class="inline-block h-[2rem] w-[2rem] rounded-full ring-2 ring-white dark:ring-gray-800"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHitaD1ZrcxCRK08phOF_d32QQBVgVohlbA&usqp=CAU"
+                      alt="Image Description"
+                    />
+                    <span
+                      class="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400"
+                    ></span>
+                  </div>
+                  <span class="flex-1 mr-3 whitespace-nowrap">Naser</span>
+                  <span>#29</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Score Board -->
+
+    <!-- ===================== Section 1 =================== -->
+    <section style="margin-bottom: 450px">
+      
+      
+      <!-- Content Section 1 -->
+      <div class="mt-56 flex items-center justify-center px-16">
+        <div class="relative w-full max-w-lg">
+          <div class="absolute top-0 -left-4 w-72 h-72 bg-red-500 rounded-full mix-blend-normal filter blur-3xl opacity-30 animate-blob"></div>
+          <div class="absolute top-0 -right-4 w-72 h-72 bg-blue-400 rounded-full mix-blend-normal filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+          <div class="absolute -bottom-36 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-normal filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+        </div>
+      </div>
+      
+      <div class="grid grid-flow-row text-center relative">
+        <div class="grid grid-flow-row m-8 ">
+          <h2
+            class="font-bold text-cyan-700 text-5xl "
+          >
+          !شارك في التحديات وحقق مبتغاك<br />
+          </h2>
+          <span
+            class="font-normal text-2xl text-[#D8D8D8] pt-4"
+            >تحديات أسبوعية تحفز المطورين على تطوير مهاراتهم في<br />
+            مجالات تطوير الويب</span>
+        </div>
+
+
+        <div class="flex justify-center gap-4">
+          <div>
+            <a href="#challengeSection">
+              <button
+                class="rounded-md p-3.5 px-7 text-lg font-semibold bg-gradient-to-r from-cyan-700 to-[#D829B1] hover:drop-shadow-2xl text-white"
+              >
+                ابدأ التحدي
+              </button>
+            </a>
+          </div>
+          <div>
+            <button
+              data-modal-target="authentication-modal"
+              data-modal-toggle="authentication-modal"
+              style="border: 2px solid #d829b297; border-radius: 8px"
+              type="button"
+              class="px-7 p-3.5 text-lg font-semibold text-white transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 bg-gradient-to-br"
+              data-te-ripple-init
+            >
+              انشئ التحدي
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------انشئ التحدي----->
+        
+        
+    <section>
+      <div
+      id="authentication-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      style="direction: rtl"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+      <div class="relative w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div
+        class="relative border-solid border-2 border-[#1b317a] bg-[#021737] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-lg shadow"
+        >
+        <button
+        type="button"
+        class="absolute top-3 left-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white"
+        data-modal-hide="authentication-modal"
+        >
+        <svg
+        class="w-3 h-3"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 14"
+        >
+        <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+        />
+      </svg>
+      <span class="sr-only">Close modal</span>
+    </button>
+    <div class="px-6 py-6 lg:px-8">
+      <h3 class="mb-4 text-xl font-medium text-white">انشئ تحدي</h3>
+      <form class="space-y-6" action="#">
+        <div>
+          <label
+          for="email"
+          class="block mb-2 text-sm font-medium text-white"
+          >عنوان التحدي</label
+          >
+          <input
+          type="text"
+          name="email"
+          id="email"
+          class="bg-[#021737] border border-gray-100 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder=""
+          />
+        </div>
+        <div>
+          <label
+          for="password"
+          class="block mb-2 text-sm font-medium text-white"
+          >وصف التحدي</label
+          >
+          <input
+          type="text"
+          name="password"
+          id="text"
+          placeholder=""
+          class="bg-[#021737] border border-gray-100 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          />
+        </div>
+        <div>
+          <label
+          class="block mb-2 text-sm font-medium text-white"
+          for="small_size"
+          >ارفق صور التحدي</label
+          >
+          <input
+          class="block w-full mb-5 text-xs text-white border border-gray-300 rounded-lg cursor-pointer bg-[#021737] focus:outline-none placeholder-[#2d51c8]"
+          id="small_size"
+          type="file"
+          />
+        </div>
+        <div>
+          <label
+          for="password"
+          class="block mb-2 text-sm font-medium text-white"
+          >عدد الايام</label
+          >
+          <input
+          name="number"
+          id="number"
+          placeholder=""
+          class="bg-[#021737] border border-gray-100 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          />
+        </div>
+        <button
+        id="addNewChallengebtn"
+        onclick="addNewChallenge()"
+        class="w-full text-white bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+        شارك التحدي
+      </button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- ============================= section 2 ============================== -->
+    <!--  Cards Chalenages -->
+
+    <section class="mb-56" id="challengeSection">
+
+      <h2 style="direction: rtl;" class=" mx-32 my-10 text-4xl font-bold text-gray-400">التحديات الأسبوعية</h2>
+
+      <div class="flex justify-center">
+      <div class="flex flex-wrap w-screen gap-7 gap-x-7 justify-center mt-20 mt-7">
+      <!-- Slider Cards Challenges -->
+
+        <div class="container mx-auto ">
+          <div class="splide  sm:px-9 ">
+            <div class="splide__arrows">
+              <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+              </button>
+              <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+              </button>
+            </div>
+            <div class="splide__track ">
+              <div class="splide__list gap-x-4">
+                
+                <!-- card 1 -->
+                <div class="w-full p-4 shadow splide__slide sm:max-w-sm ">
+                  <div
+          class="block rounded-3xl bg-blue-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-80">
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <img
+              class="rounded-t-3xl"
+              src="https://miro.medium.com/v2/resize:fit:960/0*F8WIp0ptTjmm7VXY.jpg"
+              alt=""
+            />
+            <a href="#!">
+              <div
+                style="border-radius: 11px"
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              ></div>
+            </a>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between font-bold text-xs pb-5">
+              <div class="flex gap-2">
+                <h6 class="text-teal-600">HTML</h6>
+                <h6 class="text-sky-600">CSS</h6>
+                <h6 class="text-red-500">JS</h6>
+              </div>
+
+              
+            </div>
+
+            <h5
+              class="mb-1 text-xl font-medium leading-tight text-neutral-50 pt-1"
+              style="direction: rtl"
+            >
+            تطبيق حساب العمر
+            </h5>
+            <p
+              class="mb-8 text-xs opacity-50 text-neutral-200"
+              style="direction: rtl"
+            >
+            تم تصميم هذا التحدي لتحسين مهاراتك في JavaScript والتحقق من صحة النماذج. قد يكون العمل مع التواريخ في JavaScript أمرًا صعبًا، لذا سيكون هذا اختبارًا رائعًا!
+            </p>
+          </div>
+          <div class="flex gap-3 justify-center mb-2" style="direction: rtl">
+            <div class="w-10 h-1 rounded-md bg-yellow-300"></div>
+            <div class="w-10 h-1 rounded-md bg-yellow-300"></div>
+            <div class="w-10 h-1 rounded-md bg-yellow-300"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+          </div>
+
+          <div class="flex justify-center align-baseline">
+            <p class="text-yellow-300 mb-5">متوسط</p>
+          </div>
+          <div class="flex justify-center mb-6 pb-4">
+            <button
+              class="bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl px-7 py-1 rounded-md text-white" data-modal-target="authentication-modal1"
+              data-modal-toggle="authentication-modal1"> 
+              عرض التحدي
+            </button>
+          </div>
+        </div>
+                  
+
+  </div>
+  <!-- end card 1 -->
+  
+  
+  
+  <!-- card 2 -->
+  <div class="w-full p-4 shadow splide__slide sm:max-w-sm">
+                  
+    <div
+    class="block rounded-3xl bg-blue-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-80"
+  >
+    <div
+      class="relative overflow-hidden bg-cover bg-no-repeat"
+      data-te-ripple-init
+      data-te-ripple-color="light"
+    >
+      <img
+        class="rounded-t-3xl"
+        src="https://repository-images.githubusercontent.com/521807714/870a6d41-2f61-47a1-9dc2-a9c6cd5a498f"
+        alt=""
+      />
+      <a href="#!">
+        <div
+          style="border-radius: 11px"
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+        ></div>
+      </a>
+    </div>
+    <div class="p-4">
+      <div class="flex justify-between font-bold text-xs pb-5">
+        <div class="flex gap-2">
+          <h6 class="text-teal-600">HTML</h6>
+          <h6 class="text-sky-600">CSS</h6>
+          <h6 class="text-red-500">JS</h6>
+        </div>
+
+        <div>
+          
+        </div>
+      </div>
+
+      <h5
+        class="mb-1 text-xl font-medium leading-tight text-neutral-50 pt-1"
+        style="direction: rtl"
+      >
+      نموذج تفاصيل البطاقة التفاعلية
+      </h5>
+      <p
+        class="mb-8 text-xs opacity-50 text-neutral-200"
+        style="direction: rtl"
+      >
+      سيكون هذا المشروع الممتع طريقة ممتازة لممارسة معالجة DOM والتحقق من صحة النموذج مع اختبار مهارات HTML وCSS أيضًا.
+      </p>
+    </div>
+    <div class="flex gap-3 justify-center mb-2" style="direction: rtl">
+      <div class="w-10 h-1 rounded-md bg-green-500"></div>
+      <div class="w-10 h-1 rounded-md bg-green-500"></div>
+      <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+      <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+      <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+    </div>
+
+    <div class="flex justify-center align-baseline">
+      <p class="text-green-500 mb-5">مبتدئ</p>
+    </div>
+    <div class="flex justify-center mb-6 pb-4">
+      <button
+        class="bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl px-7 py-1 rounded-md text-white" data-modal-target="authentication-modal1"
+        data-modal-toggle="authentication-modal1"
+      >
+        عرض التحدي
+      </button>
+    </div>
+  </div>
+
+  </div>
+  <!-- end card 2 -->
+  
+  <!-- card 3 -->
+  <div class="w-full p-4 shadow splide__slide sm:max-w-sm">
+                  
+                  <div
+          class="block rounded-3xl bg-blue-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-80"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <img
+              class="rounded-t-3xl"
+              src="https://academy.hsoub.com/uploads/monthly_2021_06/09-toptal-blog-image-1510215062070-915c3307d65a666a341e8ccb9c89f81c.png.7a0bb6ca0d7263c9ebfa74f6f36a2f5e.png"
+              alt=""
+            />
+            <a href="#!">
+              <div
+                style="border-radius: 11px"
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              ></div>
+            </a>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between font-bold text-xs pb-5">
+              <div class="flex gap-2">
+                <h6 class="text-teal-600">ReactJS,</h6>
+                <h6 class="text-sky-600">Tailwind</h6>
+                <h6 class="text-red-500">NodeJS</h6>
+              </div>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <h5
+              class="mb-1 text-xl font-medium leading-tight text-neutral-50 pt-1"
+              style="direction: rtl"
+            >
+            dashboard تحدي تصميم لوحة التحكم الديناميكية
+            </h5>
+            <p
+              class="mb-8 text-xs opacity-50 text-neutral-200"
+              style="direction: rtl"
+            >
+            مستخدم متفاعلة باستخدام HTML، CSS، وJavaScript. ابنِ واجهة مبتكرة وسلسة تتناسب مع مختلف الأجهزة وتوفر تجربة مستخدم استثنائية."
+            </p>
+          </div>
+          <div class="flex gap-3 justify-center mb-2" style="direction: rtl">
+            <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+            <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+            <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+            <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+          </div>
+
+          <div class="flex justify-center align-baseline">
+            <p class="text-orange-600 mb-5">متقدم</p>
+          </div>
+          <div class="flex justify-center mb-6 pb-4">
+            <button
+              class="bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl px-7 py-1 rounded-md text-white" data-modal-target="authentication-modal1"
+              data-modal-toggle="authentication-modal1"
+            >
+              عرض التحدي
+            </button>
+          </div>
+        </div>
+  </div>
+
+                  <!-- end card 3 -->
+
+
+                  <!-- card 4 -->
+                  <div class="w-full p-4 shadow splide__slide sm:max-w-sm">
+                    <div
+          class="block rounded-3xl bg-blue-950 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] w-80"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            <img
+              class="rounded-t-3xl"
+              src="https://user-images.githubusercontent.com/94307781/253773190-b69a1d7e-04f2-42b8-b2c0-1730c8208f6e.png"
+              alt=""
+            />
+            <a href="#!">
+              <div
+                style="border-radius: 11px"
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              ></div>
+            </a>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between font-bold text-xs pb-5">
+              <div class="flex gap-2">
+                <h6 class="text-teal-600">HTML</h6>
+                <h6 class="text-sky-600">CSS,</h6>
+                <h6 class="text-red-500">JS</h6>
+              </div>
+
+              <div>
+                
+              </div>
+            </div>
+
+            <h5
+              class="mb-1 text-xl font-medium leading-tight text-neutral-50 pt-1"
+              style="direction: rtl"
+            >
+            تحدي قائمة المهام TODO LIST
+            </h5>
+            <p
+              class="mb-8 text-xs opacity-50 text-neutral-200"
+              style="direction: rtl"
+            >
+            "انطلق في تحدي تطوير قائمة مهام مبتكرة باستخدام لغات الويب. استخدم HTML وCSS لتصميم واجهة بسيطة وجذابة، واستفد من JavaScript لجعل القائمة تفاعلية وقابلة للتعديل. سيكون هذا التحدي فرصة لتحسين مهاراتك في برمجة الواجهات والتفاعل مع العناصر على الصفحة."
+
+            </p>
+          </div>
+          <div class="flex gap-3 justify-center mb-2" style="direction: rtl">
+            <div class="w-10 h-1 rounded-md bg-green-500"></div>
+            <div class="w-10 h-1 rounded-md bg-green-500"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+            <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+          </div>
+
+          <div class="flex justify-center align-baseline">
+            <p class="text-green-500 mb-5">مبتدئ</p>
+          </div>
+          <div class="flex justify-center mb-6 pb-4">
+            <button
+              class="bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl px-7 py-1 rounded-md text-white" data-modal-target="authentication-modal1"
+              data-modal-toggle="authentication-modal1"
+            >
+              عرض التحدي
+            </button>
+          </div>
+              </div>
+                  </div>
+                  <!-- end card 4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+        <script>
+          var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+          });
+    
+          splide.mount();
+        </script>
+
+
+        <!-- End Slider Cards -->
+
+        
+  
+  </section>
+
+  <!------display challenge------>
+
+  <section>
+    <div
+    id="authentication-modal1"
+    tabindex="-1"
+    aria-hidden="true"
+    style="direction: rtl"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+    <div class="relative w-full max-w-2xl max-h-screen">
+      <!-- Modal content -->
+      <div
+      class="relative border-solid border-2 border-[#1b317a] bg-[#021737] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-lg shadow"
+      >
+      <button
+      type="button"
+      class="absolute top-3 left-2.5 text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white"
+      data-modal-hide="authentication-modal"
+      >
+      <svg
+      class="w-3 h-3"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 14 14"
+      >
+      <path
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+      />
+    </svg>
+    <span class="sr-only">Close modal</span>
+  </button>
+  <div class="px-6 py-6 lg:px-8 ">
+    <div>
+      <img
+      class="rounded-3xl w-screen h-3/4"
+      src="https://res.cloudinary.com/dz209s6jk/image/upload/v1588107804/Challenges/v6totnrrz9tl9fge8eyi.jpg"
+      alt=""
+    />
+    </div>
+    <div class="mt-3">
+      <h1 class="text-white text-xl font-semibold">وصف التحدي</h1>
+      <h3 class="mt-2 text-gray-400">سيعطيك هذا التحدي لمحة حقيقية عن سير عمل مطوري الواجهة الأمامية
+        المحترفين. يتضمن تصميمات لموقع ويب كامل الوظائف مكون من 3 صفحات</h3>
+      <h1 class="text-white text-xl font-semibold mt-5">مستوى التحدي</h1>
+
+      <div class="flex gap-3 justify-center mb-2 mt-8" style="direction: rtl">
+        <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+        <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+        <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+        <div class="w-10 h-1 rounded-md bg-orange-600"></div>
+        <div class="w-10 h-1 rounded-md bg-slate-600"></div>
+      </div>
+
+      <div class="flex justify-center align-baseline">
+        <p class="text-orange-600 mb-5">متقدم</p>
+      </div>
+
+      <h1 class="text-white text-xl font-semibold mt-4">التقنيات المتاحة</h1>
+      <div class="flex justify-between font-bold text-lg pb-5 mt-4">
+        <div class="flex gap-2">
+          <h6 class="text-teal-600">ReactJS,</h6>
+          <h6 class="text-sky-600">Tailwind,</h6>
+          <h6 class="text-red-500">NextJS</h6>
+      </div>
+
+      <button
+        class="bg-gradient-to-r from-[#0066FF] to-[#D829B1] hover:drop-shadow-2xl px-7 py-1 rounded-md text-white text-base font-normal"
+      >
+        شارك فالتحدي
+      </button>
+
+
+    </div>
+</div>
+</section>
+
+  
+
+    <!-- ================ Section 3 ================= -->
+
+    <section class=" mt-36">
+      <h2 style="direction: rtl;" class=" mx-32 my-10 text-4xl font-bold text-gray-400">التحديات القائمة</h2>
+      <div class="flex items-center justify-center">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+
+
+            <!-- 1 card -->
+            <div style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+              <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                    <!-- svg  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+  
+                      </div>
+                    </a>
+              <div class="mt-8">
+                  <p class="text-xl font-semibold my-2 text-white">تحدي Frontend ليوم العلم السعودي</p>
+                  <div class="flex space-x-2 text-white opacity-30 text-sm">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                       <p>المطلوب , تحويل الصورة لكود Frontend مع اضافة لمساتك الفنانه
+                        اللغات والتقنيات مفتوح</p> 
+                  </div>
+                  <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                       <p class="text-white opacity-30">4 أيام</p> 
+                  </div>
+                  <div class="border-t-2 opacity-10"></div>
+  
+                  <div class="flex justify-between">
+                      <div class="my-2">
+                          <div class="flex space-x-2 pt-6">
+                              <img src="https://web.ics.purdue.edu/~circlek/IMG/KFR.jpg" 
+                              class="w-6 h-6 rounded-full"/>
+                              <h3 class="pr-2">Rahaf</h3>
+                          </div>
+                      </div>
+                       <div class="my-2">
+                          <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                          <div class="text-base text-gray-400 font-semibold pr-3">
+                              <p class="text-white opacity-30">9</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+    
+            <!-- 2 card -->
+            <div style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+              <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                    <!-- svg  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+  
+                      </div>
+                    </a>
+              <div class="mt-8">
+                  <p class="text-xl font-semibold my-2 text-white">فعالية الويكند 💥<br> تحدي صور الشاشة</p>
+                  <div class="flex space-x-2 text-white opacity-30 text-sm">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                       <p> المطلوب منك تشغل المقطع المرفق لك في التحدي وتصور الشاشه وتسوي منه UI بسيط ومتناسق</p> 
+                  </div>
+                  <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                       <p class="text-white opacity-30">2 أيام</p> 
+                  </div>
+                  <div class="border-t-2 opacity-10"></div>
+  
+                  <div class="flex justify-between">
+                      <div class="my-2">
+                          <div class="flex space-x-2 pt-6">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQRSngbbo6RfozMzK5OsRL9bDgnx4vZiP2Jw&usqp=CAU" 
+                              class="w-6 h-6 rounded-full"/>
+                              <h3 class="pr-2">Y1bx</h3>
+                          </div>
+                      </div>
+                       <div class="my-2">
+                          <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                          <div class="text-base text-gray-400 font-semibold pr-3">
+                              <p class="text-white opacity-30">33</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+
+
+            <!-- 3 card -->
+            <div style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+              <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                    <!-- svg  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+  
+                      </div>
+                    </a>
+              <div class="mt-8">
+                  <p class="text-xl font-semibold my-2 text-white">تحدّي Frontend لطيييف 🥹🥹 </p>
+                  <div class="flex space-x-2 text-white opacity-30 text-sm">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                       <p>ا نسخ واجهات الموقع المرفق كـ Frontend داخل التحدي</p> 
+                  </div>
+                  <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                       <p class="text-white opacity-30">2 أيام</p> 
+                  </div>
+                  <div class="border-t-2 opacity-10"></div>
+  
+                  <div class="flex justify-between">
+                      <div class="my-2">
+                          <div class="flex space-x-2 pt-6">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a178d60a-3455-43df-b0da-863f1ddaf38d/dfv3m5x-de495204-0631-4700-98ea-d0a541854f75.png/v1/fill/w_622,h_350,q_70,strp/yakuza_medic_gaming_by_clubilc_dfv3m5x-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2ExNzhkNjBhLTM0NTUtNDNkZi1iMGRhLTg2M2YxZGRhZjM4ZFwvZGZ2M201eC1kZTQ5NTIwNC0wNjMxLTQ3MDAtOThlYS1kMGE1NDE4NTRmNzUucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NeHbJwNEO5J1HYk0qoFnv6pExdUVpib72HyuUAWfEj4" 
+                              class="w-6 h-6 rounded-full"/>
+                              <h3 class="pr-2">Khaled33</h3>
+                          </div>
+                      </div>
+                       <div class="my-2">
+                          <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                          <div class="text-base text-gray-400 font-semibold pr-3">
+                              <p class="text-white opacity-30">13</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+    
+             <!-- 4 card -->
+             <d iv style="direction: rtl;" class="relative bg-blue-950 py-6 px-6 rounded-3xl w-64 my-4 shadow-xl border-solid border-2 border-gray-500">
+              <a data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer">
+                <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-pink-500 hover:bg-pink-800 transition duration-100 left-4 -top-6">
+                    <!-- svg  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+  
+                      </div>
+                    </a>
+              <div class="mt-8">
+                  <p class="text-xl font-semibold my-2 text-white">تحدي مواقيت الصلاة </p>
+                  <div class="flex space-x-2 text-white opacity-30 text-sm">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                       <p>تحدا وشارك معانا في مشروع مواقيت الصلاة بيكون فيه عمق في الJavascript وهذا الي يحمس ويشجع على تعلمها أكثر</p> 
+                  </div>
+                  <div class="flex space-x-2 text-gray-400 text-sm my-3">
+                      <!-- svg  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                       <p class="text-white opacity-30">7 أيام</p> 
+                  </div>
+                  <div class="border-t-2 opacity-10"></div>
+  
+                  <div class="flex justify-between">
+                      <div class="my-2">
+                          <div class="flex space-x-2 pt-6">
+                              <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+                              class="w-6 h-6 rounded-full"/>
+                              <h3 class="pr-2"> MuhammedAl2</h3>
+                          </div>
+                      </div>
+                       <div class="my-2">
+                          <p class="font-semibold text-base text-white opacity-30 mb-2">مشترك</p>
+                          <div class="text-base text-gray-400 font-semibold pr-3">
+                              <p class="text-white opacity-30">42</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </section>
+
+
+        <!-- ================================ buttonNavig ================================ -->
+
+        <section>
+
+          <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+            <div class="relative w-full max-w-md max-h-full ">
+                <div class="relative  shadow border-solid border-2 border-[#1b317a] bg-[#021737] backdrop-filter backdrop-blur-lg bg-opacity-30 rounded-lg">
+                    <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="p-6 text-center">
+                        <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                        </svg>
+                        <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">جاهز للتحدي؟</h3>
+                        <a href="aboutChallenages.html" data-modal-hide="popup-modal" type="button" class="rounded-md p-1 px-3 text-base font-semibold bg-gradient-to-r from-cyan-700 to-[#D829B1] hover:drop-shadow-2xl text-white">
+                            Yes, I'm sure
+                        </a>
+                        <a data-modal-hide="popup-modal" type="button" class="hover:bg-gray-400 cursor-pointer ml-3 rounded-md focus:outline-none focus:ring-gray-200  border border-[#D829B1] text-base px-3 p-1 hover:text-gray-900 text-gray-300  dark:hover:text-white dark:hover:bg-gray-600 ">No, cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <!-- End buttonNavig -->
+
+
+        <div class="flex justify-center text-center mb-24 hover:text-gray-300 gap-1 ">
+          <i class="uil uil-arrow-left"></i>
+          <a href="challenagesUseres.html"> 
+          <h3>عرض الكل</h3>
+        </a>
+        </div>
+
+        <footer style="direction: rtl;" class="relative bg-[#050a14] pt-8 pb-6 shadow-xl shadow-gray-400">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+              <div class="w-full lg:w-6/12 px-4 flex justify-center grid grid-flow-row ">
+                <div class="mb-5">
+                  <h4 class="text-3xl fonat-semibold text-gray-400 mb-1">لنبقى على تواصل!</h4>
+                  <span class="text-center ml-7 text-white opacity-50">للوصول ل احدث التحديات</span>
+                </div>
+                <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                  <input type="email" class="p-1 rounded-md w-full bg-transparent" placeholder="بريدك الإلكتروني">
+                </h5>
+                <div class="pb-8 lg:mb-0 ">
+                  <button class="rounded-md py-1 px-7 text-lg font-semibold bg-gradient-to-r from-cyan-700 to-[#D829B1] hover:drop-shadow-2xl text-white w-full">
+                أشترك
+              </button>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="flex flex-wrap items-top mb-6">
+                  <div class="w-full lg:w-4/12 px-4 ml-auto text-base">
+                    <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2" >Abdullah Alghamdi</span>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="hover:text-gray-400" href="https://github.com/dullss" target="_blank">dullss@</a>
+                        <i class="uil uil-github"></i>
+                      </li>
+                      <li>
+                        <a class="hover:text-gray-400" href="https://www.linkedin.com/in/dulls/" target="_blank">in/dulls</a>
+                        <i class="uil uil-linkedin"></i>
+                      </li>
+                      <li>
+                        <a class="hover:text-gray-400" href="https://twitter.com/_dulls7" target="_blank">_dulls7@</a>
+                        <i class="uil uil-twitter"></i>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="w-full lg:w-4/12 px-4 text-base">
+                    <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2" >Majed Alshehri</span>
+                    <ul class="list-unstyled ">
+                      <li >
+                        <a class="hover:text-gray-400" href="https://github.com/majedalshehri1" target="_blank">majedalshehri1@</a>
+                        <i class="uil uil-github"></i>
+                      </li>
+                      <li>
+                        <a class="hover:text-gray-400" href="https://www.linkedin.com/in/majedd/" target="_blank">in/majedd</a>
+                        <i class="uil uil-linkedin"></i>
+                      </li>
+                      <li>
+                        <a class="hover:text-gray-400" href="https://twitter.com/majedshh1" target="_blank">majedshh1@</a>
+                        <i class="uil uil-twitter"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+              <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © <span id="get-current-year">2023</span><a href="" class="text-blueGray-500 hover:text-gray-800"> made by
+                  <a href="https://hackathonat.com/hackathons/reccGkFj6FpQ0nkmm" class="text-blueGray-500 hover:text-blueGray-800" target="_blank">FullStack Squad Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+</html>
