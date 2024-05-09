@@ -1,7 +1,7 @@
 # hackathon-skillchamp-project
 > Brief description of what this project does and who it's for
 
-This project was developed during [Hackathon Name], utilizing the Flowbite UI library Tailwind CSS for rapid and responsive design.
+This project was developed during skillchamp, utilizing the Flowbite UI library Tailwind CSS for rapid and responsive design.
 
 ## Demo
 Link to the project live demo: https://majedalshehri1.github.io/hackathon-skillchamp-project/
